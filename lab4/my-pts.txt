@@ -1,0 +1,37 @@
+Adding generic file (**M !!):
+	https://stackoverflow.com/questions/47250441/add-a-generic-file-in-xv6-makefile
+
+https://stackoverflow.com/questions/41377489/how-to-open-a-file-from-the-integrated-terminal-in-visual-studio-code
+	code -r proc.h
+
+To add executable, just add the C file to Makefile (just like head.c, etc.) -- it'll be compiled when make is run
+
+---
+
+https://stackoverflow.com/questions/54931289/incompatible-pointer-type-adding-system-call-xv6-using-consistent-return-type
+https://stackoverflow.com/questions/53383938/pass-struct-to-xv6-system-call
+https://stackoverflow.com/questions/32571672/access-current-running-processes-in-xv6
+
+Extra:
+	https://stackoverflow.com/questions/29448195/xv6-ptable-initialization
+
+defs.h too
+
+---
+
+https://stackoverflow.com/questions/57745250/how-to-add-a-system-call-to-find-the-number-of-processes-in-xv6
+https://stackoverflow.com/questions/68182320/getting-the-process-name-and-printing-it-out-in-xv6-c
+
+Locking:
+	https://stackoverflow.com/questions/62337198/xv6-locking-of-process-table-in-scheduler
+	Read up locking -- acquire, release [Mythili annotated notes, iitd]
+
+---
+
+** context switching:
+	https://www.cse.iitb.ac.in/~mythili/os/anno_slides/lecture25.pdf
+
+---
+
+test_numOpenFiles.c
+	SEE links -- link(), unlink() too

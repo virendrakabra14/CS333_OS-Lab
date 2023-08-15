@@ -1,0 +1,11 @@
+Answer for Part-2:
+
+1.
+- The difference is due to “dw 0xaa55” being present in boot_sector2.asm, but not in boot_sector1.asm.
+- The boot disk is detected via this magic number stored as the last two bytes of the boot sector of a disk.
+- Since this is absent in the 1st file, we get “No bootable device”. And it is present in the 2nd file (we explicitly wrote the assembly code for that), so the boot disk is recognized, and we get “Booting from Hard Disk...”.
+
+2.
+Code: hello.asm
+Screenshot: hello.png
+

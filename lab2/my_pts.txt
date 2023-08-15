@@ -1,0 +1,12 @@
+- Fork system call is used for creating a new process, which is called child process, which runs concurrently with the process that makes the fork() call (parent process). After a new child process is created, both processes will execute the next instruction following the fork() system call.
+
+- fork
+- pipe, exec, wait
+
+3,4,5 later.
+
+Tests:
+
+- 20/8
+- 22/8
+- 12/9

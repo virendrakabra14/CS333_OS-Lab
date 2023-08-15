@@ -1,0 +1,6 @@
+This is text2.txt.
+This is the second line.
+3
+4
+5
+6 This is the sixth line.

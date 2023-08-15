@@ -1,0 +1,15 @@
+alexonlinux:
+
+fork-exec model:
+https://www.digitalocean.com/community/tutorials/execvp-function-c-plus-plus
+
+This function will give the control of the current process (C program) to the command. So, the C program is instantly replaced with the actual command.
+
+So, anything that comes after execvp() will NOT execute, since our program is taken over completely!
+
+However, if the command fails for some reason, execvp() will return -1.
+
+So, whenever you use execvp(), if you want to maintain your C program, you generally use fork() to first spawn a new process, and then use execvp() on that new process.
+
+This is called the “fork-exec” model, and is the standard practice for running multiple processes using C.
+

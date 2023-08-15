@@ -1,0 +1,49 @@
+NOTE: times are "number of ticks", as indicated in the problem statement.
+
+-----
+
+WSL+Ubuntu:
+
+Updated test cases:
+
+Default Scheduler
+
+	test1 4
+		Child no. 0, Child pid: 4 exited with Status: 4, Waiting Time: 25, Run Time: 8
+		Child no. 1, Child pid: 6 exited with Status: 6, Waiting Time: 25, Run Time: 8
+		Child no. 2, Child pid: 5 exited with Status: 5, Waiting Time: 28, Run Time: 9
+		Child no. 3, Child pid: 7 exited with Status: 7, Waiting Time: 27, Run Time: 9
+	
+	test2 4
+		Child no. 0, Child pid: 4 exited with Status: 4, Waiting Time: 1, Run Time: 0
+		Child no. 1, Child pid: 5 exited with Status: 5, Waiting Time: 29, Run Time: 14
+		Child no. 2, Child pid: 6 exited with Status: 6, Waiting Time: 39, Run Time: 24
+		Child no. 3, Child pid: 7 exited with Status: 7, Waiting Time: 40, Run Time: 37
+
+
+Lets-get-even Policy
+	[It can be seen that EVEN PID's have smaller waiting times]
+
+	test1 4
+		Child no. 0, Child pid: 4 exited with Status: 4, Waiting Time: 18, Run Time: 9
+		Child no. 1, Child pid: 6 exited with Status: 6, Waiting Time: 19, Run Time: 9
+		Child no. 2, Child pid: 5 exited with Status: 5, Waiting Time: 31, Run Time: 10
+		Child no. 3, Child pid: 7 exited with Status: 7, Waiting Time: 29, Run Time: 11
+	
+	test2 4
+		Child no. 0, Child pid: 4 exited with Status: 4, Waiting Time: 1, Run Time: 0
+		Child no. 1, Child pid: 6 exited with Status: 6, Waiting Time: 22, Run Time: 21
+		Child no. 2, Child pid: 5 exited with Status: 5, Waiting Time: 35, Run Time: 12
+		Child no. 3, Child pid: 7 exited with Status: 7, Waiting Time: 35, Run Time: 34
+
+-----
+
+Earlier Test cases: (test-wait2 and test-oddeve)
+
+Default Scheduler
+	pid 4		Waiting Time: 793, Run Time: 800
+	pid 5		Waiting Time: 794, Run Time: 793
+
+Lets-get-even Policy
+	pid 4		Waiting Time: 401, Run Time: 803
+	pid 5		Waiting Time: 803, Run Time: 801
